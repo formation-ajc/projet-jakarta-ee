@@ -13,7 +13,7 @@ public class User {
     private String firstname;
     @Column(name = "lastname", nullable = false)
     private String lastname;
-    @Column(name = "email", updatable = false, nullable = false, unique = true)
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
     @Column(name = "password", nullable = false)
     private String password;
@@ -30,6 +30,14 @@ public class User {
     public User(String email, String password) {
         this.email = email;
         this.password = password;
+    }
+
+    public User(Integer id, String email, String password, String firstname, String lastname) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
 
     public Integer getId() {
