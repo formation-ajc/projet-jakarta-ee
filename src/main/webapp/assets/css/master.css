@@ -1,0 +1,51 @@
+@import "./bootstrap.min.css";
+@import "header.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+/*.dropdown-menu {*/
+/*    background-color: #0B1B35;*/
+/*}*/
+/*.dropdown-item:hover {*/
+/*    color: #0B1B35;*/
+/*}*/
+/*.dropdown-item {*/
+/*    color: white;*/
+/*}*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background-color: #122646;
+}
+
+.main {
+    background-color: #122646;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
