@@ -12,7 +12,7 @@
                 <a style="font-size:25px" class="nav-link text-white" href="<% out.print(request.getContextPath()); %>/home">Home</a>
             </li>
             <li class="nav-item">
-                <a style="font-size:25px" class="nav-link text-white" href="<% out.print(request.getContextPath()); %>/user/games">Recipes</a>
+                <a style="font-size:25px" class="nav-link text-white" href="<% out.print(request.getContextPath()); %>/recipe">Recipes</a>
             </li>
         </ul>
 
@@ -27,7 +27,7 @@
                     <li>
                         <div class="d-flex flex-column gap-2 p-2">
                             <a href="<% out.print(request.getContextPath()); %>/login" class="btn btn-success w-100 primary border-0">Sign in</a>
-                            <a href="<% out.print(request.getContextPath()); %>/register" class="btn btn-info w-100 blue border-0">Sign up</a>
+                            <a href="<% out.print(request.getContextPath()); %>/register" class="btn btn-info w-100 blue border-0 text-white">Sign up</a>
                         </div>
                     </li>
                 </c:when>

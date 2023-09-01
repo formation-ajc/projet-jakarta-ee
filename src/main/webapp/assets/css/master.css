@@ -63,6 +63,18 @@ body {
     color: #e2e1d9 !important;
 }
 
+.text-blue {
+    color: #bfe9e1 !important;
+}
+
+.red {
+    background-color: #410002;
+}
+
+.text-red {
+    color: #410002;
+}
+
 
 
 
