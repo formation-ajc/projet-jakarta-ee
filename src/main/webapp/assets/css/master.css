@@ -24,8 +24,47 @@ body {
 }
 
 .main {
-    background-color: #122646;
+    background-color: #1b1c17;
 }
+
+.transparent {
+    background-color: transparent;
+}
+
+.dark {
+    background-color: #1b1c17;
+}
+
+.dark-secondary {
+    background-color: #23261B;
+}
+
+.primary {
+    background-color: #88a936
+}
+
+.secondary {
+    background-color: #8d9477
+}
+
+.white {
+    background-color: #e2e1d9
+}
+
+.blue {
+    background-color: #264c47
+}
+
+.neutral {
+    background-color: #d0d0c7;
+}
+
+.text-white {
+    color: #e2e1d9 !important;
+}
+
+
+
 
 /* width */
 ::-webkit-scrollbar {
