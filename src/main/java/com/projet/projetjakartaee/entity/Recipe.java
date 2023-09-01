@@ -3,10 +3,13 @@ package com.projet.projetjakartaee.entity;
 import java.time.LocalDate;
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
@@ -20,6 +23,8 @@ public class Recipe {
 	private LocalDate createdAt;
 	@OneToMany(mappedBy = "recipe")
 	private List<IngredientRecipe> ingredientRecipes;
+
+	
 	public Recipe() {
 		super();
 	}
@@ -55,6 +60,12 @@ public class Recipe {
 		this.createdAt = createdAt;
 	}
 	
+	public List<IngredientRecipe> getIngredientRecipes() {
+		return ingredientRecipes;
+	}
+	public void setIngredientRecipes(List<IngredientRecipe> ingredientRecipes) {
+		this.ingredientRecipes = ingredientRecipes;
+	}
 	@Override
 	public String toString() {
 		return "Recipe [id=" + id + ", name=" + name + ", description=" + description + ", createdAt=" + createdAt
