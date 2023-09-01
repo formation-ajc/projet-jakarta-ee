@@ -1,1 +1,0 @@
-alert("premier Fichier javascript");
