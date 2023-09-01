@@ -11,7 +11,7 @@ public class Database {
     private Database() {
         this.emf = Persistence.createEntityManagerFactory("db_config");
     }
-
+    
     public static EntityManagerFactory getInstanceEmf() {
         if (instance == null) {
             instance = new Database();
